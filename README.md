@@ -59,10 +59,6 @@ Open http://localhost:3000.
 - The implementation enforces the Module 9 slide's stated Z-test sample-size convention (n >= 30 for each sample).
 - Two-sample variance field wording remains deliberately generic pending instructor confirmation of the population-versus-sample variance convention in the course example.
 
-### History
-- Browser-local persistence, search, rename, delete, and saved-record inspection.
-- Supabase authentication/cloud persistence are not implemented yet.
-
 ## Verification
 
 Run:
@@ -71,12 +67,3 @@ Run:
 npm run typecheck
 npm run build
 ```
-
-This starter should be tested with the course's worked examples and on desktop, tablet, and mobile before submission.
-
-## v3 UI update
-- Light/dark theme toggle (saved in the browser, defaults to dark).
-- Larger base font size across the app.
-- Regression: starts empty, "Load sample" button, optional variable names, r², plain-language interpretation of slope, intercept, r, r² and residuals.
-- Hypothesis testing: starts empty, "Load sample" button (matches the selected test), built-in standard normal Z-table that highlights the calculated and critical Z values.
-- Every calculation is saved automatically to Analysis History (no Save button; rename or delete in History). Re-calculating the exact same regression data does not create a duplicate record.
